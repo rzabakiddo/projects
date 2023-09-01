@@ -21,23 +21,12 @@ const builder = {
         if (data.info) {
             const info = document.createElement("div");
             info.className = 'info';
-            if (data.info.ver) {
-                const ver = document.createElement("div");
-                ver.className = 'ver';
-                ver.innerText = data.info.ver;
-                info.appendChild(ver);
-            }
-            if (data.info.engine) {
-                const engine = document.createElement("div");
-                engine.className = 'engine';
-                engine.innerText = data.info.engine;
-                info.appendChild(engine);
-            }
-            if (data.info.warn) {
-                const warn = document.createElement("div");
-                warn.className = 'warn';
-                warn.innerText = data.info.warn;
-                info.appendChild(warn);
+            for (let badge of data.info) {
+                const sub = document.createElement("div");
+                sub.className = 'badge';
+                sub.style.background = badge.color;
+                sub.innerText = badge.content;
+                info.appendChild(sub);
             }
             project.appendChild(info);
         }
@@ -59,25 +48,37 @@ const projects = [
     {
         title: 'Custom death plugin',
         short: 'A plugin that adds a different death system in minecraft, when you die you can be revived by other player.',
-        info: {
-            ver: '1.19',
-            engine: 'Spigot'
-        },
+        info: [
+            {
+                content: '1.19',
+                color: '#ff9900'
+            },
+            {
+                content: 'Spigot',
+                color: '#0080dd'
+            }
+        ],
         open: 'https://github.com/rzabakiddo/playerdeath-core/tree/master'
     },
     {
         title: 'Web-based CPU test',
         short: 'A simple CPU benchmark, allows you to check the CPU score of a particular browser. Useful for choosing the most optimal.',
-        info: {
-            engine: 'Browser'
-        },
+        info: [
+            {
+                content: 'Browser',
+                color: '#60ad00'
+            },
+        ],
         open: 'https://github.com/rzabakiddo/cpu/'
     },
     {
         title: 'RBug',
         short: 'Method debugger (Java), allows to modify returned values in real time. Supports scripting language for automation',
-        info: {
-            warn: 'Currently private'
-        }
+        info: [
+            {
+                content: 'Currently private',
+                color: '#ff0000'
+            }
+        ]
     },
 ]

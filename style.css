@@ -58,22 +58,9 @@ body {
     font-size: .3em;
 }
 
-.engine, .ver, .warn {
+.badge {
     padding: 2px;
     border-radius: 4px;
-}
-
-.engine {
-    color: #ddd;
-    background: rgba(0, 80, 200, 1);
-}
-
-.ver {
-    background: rgba(200, 90, 0, 1);
-}
-
-.warn {
-    background: rgba(255, 0, 0, 1);
 }
 
 #info {
