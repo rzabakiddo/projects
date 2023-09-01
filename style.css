@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("assets/montserrat.ttf");
+    src: url("/assets/montserrat.ttf");
 }
 
 @font-face {
     font-family: "MontLight";
-    src: url("assets/montserrat-light.ttf");
+    src: url("/assets/montserrat-light.ttf");
 }
 
 html {
@@ -160,13 +160,13 @@ body {
     z-index: 1;
 }
 
-.
 #root {
     transition: .2s all;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 4;
     background: black;
     left: 0;
 }
