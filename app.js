@@ -4,8 +4,8 @@ onload = () => {
         document.getElementById("root").style.transform = 'scaleX(0) rotate(2deg)'
         setTimeout(() => {
             document.getElementById("load").remove();
-        }, 1)
-    }, 1)
+        }, 500)
+    }, 2500)
 }
 
 const builder = {
