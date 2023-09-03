@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("assets/montserrat.ttf");
+    src: url("/assets/montserrat.ttf");
 }
 
 @font-face {
     font-family: "MontLight";
-    src: url("assets/montserrat-light.ttf");
+    src: url("/assets/montserrat-light.ttf");
 }
 
 html {
@@ -105,6 +105,27 @@ body {
     font-family: "MontLight";
 }
 
+#lang {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    text-align: right;
+}
+#t {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+}
+.lang {
+    transition: .2s all;
+    min-width: 2em;
+    color: #ddd;
+}
+.lang:hover {
+    cursor: pointer;
+    color: #88f;
+}
 #main {
     font-size: 3em;
     text-align: center;
@@ -117,6 +138,7 @@ body {
 }
 
 .project {
+    transition: .4s all;
     width: 6em;
     text-align: center;
     position: relative;
