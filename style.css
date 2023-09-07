@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("/assets/montserrat.ttf");
+    src: url("assets/montserrat.ttf");
 }
 
 @font-face {
     font-family: "MontLight";
-    src: url("/assets/montserrat-light.ttf");
+    src: url("assets/montserrat-light.ttf");
 }
 
 html {
